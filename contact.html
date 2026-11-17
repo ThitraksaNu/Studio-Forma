@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js" defer></script>
+    <link rel="stylesheet" href="../css/responsive.css">
+
+</head>
+<body>
+     <nav class="navbar-wrapper">
+        <!-- Logo -->
+        <div class="navbar-logo">
+            <a href="index.html">
+                <img src="./assets/images/screen.png" alt="Studio Forma Logo">
+            </a>
+        </div>
+        <!-- Navigation -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ourwork.html">Work</a></li>
+            <li><a href="services.html">Services & Pricing</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <!-- Right side buttons -->
+        <div class="navbar-actions">
+            <a href="#" class="btn-start">Start a Project</a>
+            <a href="#" class="icon-btn">♙</a>
+        </div>
+
+        <button class="menu-toggle">☰</button>
+    </nav>
+
+    <!-- contact-intro -->
+    <div class="contact-intro">
+    
+        <div class="intro-left">
+            <p class="intro-label">GET IN TOUCH • PROJECT COMMISSIONING</p>
+            <h1>Let's start a conversation about your next milestone.</h1>
+        </div>
+    
+        <p class="intro-text">Tell us about your brand, project goals, and timeline. We respond to all qualified inquiries within one business day with an architectural proposal draft.</p>
+    
+    </div>
+
+    <!-- contact-card -->
+    <div class="contact-wrapper">
+     <div class="card" id="container">
+        <h2>Contact Us</h2>
+        <p class="contact-lead">Have a project in mind or want to explore working together? We'd love to hear from you.</p>
+        
+        <div class="info-group">
+            <h6>OFFICE LOCATION</h6>
+            <p>68 Jay Street, Suite 402<br>DUMBO, Brooklyn, NY 11201<br>United States</p>
+        </div>
+    
+        <div class="info-group">
+            <h6>EMAIL ADDRESS</h6>
+            <p>hello@forma.design</p>
+        </div>
+    
+        <div class="info-group">
+            <h6>OFFICE HOURS</h6>
+            <p>Monday – Friday<br>9:00 AM – 6:00 PM EST</p>
+        </div>
+    
+        <hr>
+    
+        <div class="info-group">
+            <h6>FOLLOW US</h6>
+            <div class="social-media">
+                <button>Twitter / X</button>
+                <button>LinkedIn</button>
+                <button>Instagram</button>
+            </div>
+            </div>
+        </div>
+
+     <div class="card" id="container-2">
+        <form class="contact-form">
+
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" placeholder="e.g. Helena Vance" required>
+            <p class="error" id="name-error"></p>
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" placeholder="helena@company.com" required>
+            <p class="error" id="email-error"></p>
+
+            <label for="service">Service of Interest</label>
+            <select id="service">
+                <option>Brand Identity</option>
+                <option>Web & UI Design</option>
+                <option>Frontend Build</option>
+            </select>
+
+            <label for="budget">Budget Range</label>
+            <select id="budget">
+                <option>$3,500 – $6,500</option>
+                <option>$6,500 – $10,000</option>
+                <option>$10,000 – $25,000</option>
+            </select>
+
+            <label for="message">Message *</label>
+            <textarea id="message" rows="5" placeholder="Tell us about your project, timeline, and goals..." required></textarea>
+            <p class="error" id="message-error"></p>
+            <button class="button-submit"  type="submit">SEND MESSAGE →</button>
+        </form>
+
+     </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="card-footer">
+
+        <div class="footer-top">
+
+            <div class="footer-brand">
+                <h2 class="footer-logo">STUDIO FORMA</h2>
+                <p>An independent creative engineering and digital architecture studio crafting intentional, high-performance web systems.</p>
+                <p class="copyright">© 2024 Studio Forma Inc. Crafted with precision.</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <a href="index.html">Home</a>
+                <a href="Pages/work.html">Selected Work</a>
+                <a href="#">Services</a>
+                <a href="#">Agency Story</a>
+                <a href="#">Careers</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Services</h4>
+                <a href="#">Brand Identity</a>
+                <a href="#">Web Design & UI</a>
+                <a href="#">Creative Engineering</a>
+                <a href="#">Design Systems</a>
+            </div>
+
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="#" class="footer-email">studio@forma.design</a>
+                <p>Brooklyn, NY — Global Remote</p>
+                <div class="socials">
+                    <a href="#">Twitter/X</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">ReadCV</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <span class="available">Available for Q3/Q4 Projects</span>
+            <div class="legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

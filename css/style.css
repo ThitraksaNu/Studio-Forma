@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* ==== NAVBAR === */
+.navbar-wrapper {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+/* === LOGO === */
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+.navbar-logo img {
+    width: 200px;
+    height: 50px;
+    object-fit: contain;
+}
+
+/* === NAVIGATION LINKS === */
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+.nav-links li {
+    display: flex;
+}
+.nav-links li a {
+    display: flex;
+    align-items: center;
+    height: 42px;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #444;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: 0.2s ease;
+}
+.nav-links li a.active {
+    background-color: #000000;
+    color: #ffffff;
+}
+.nav-links li a:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* === RIGHT SIDE === */
+.navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+/* === BUTTONS === */
+.btn-start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 24px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: 0.2s ease;
+}
+.btn-start:hover {
+    background-color: #333333;
+}
+.btn-learn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    padding: 0 24px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #000000;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: 0.2s ease;
+}
+.btn-learn:hover {
+    background-color: #fff2e6;
+}
+.icon-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.icon-btn:hover {
+    background-color: #333333;
+}
+
+/* === CARD (reusable) === */
+.card {
+    flex: 1;
+    padding: 24px 32px;
+    border-radius: 12px;
+    border: 2px solid grey;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card-text {
+    margin: 0 0 6px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+/* === CONTACT === */
+#request-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 30px;
+    padding: 60px;
+    background: #000;
+    color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.request-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 520px;
+}
+.badge {
+    align-self: flex-start;
+    padding: 4px 12px;
+    background: #2a2a2a;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.badge::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 8px;
+    background: #fff;
+    border-radius: 50%;
+}
+.request-text h1 {
+    font-size: 44px;
+    line-height: 1.15;
+}
+.request-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #bbb;
+}
+.request-actions {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+.btn-book {
+    padding: 12px 24px;
+    background: #2f55c4;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.btn-email {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* === FOOTER === */
+.card-footer {
+    margin-top: 60px;
+    padding: 60px 50px 32px;
+    background: #f4f4f2;
+    border-top: 1px solid #e5e5e5;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.08);
+}
+.footer-top {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+    gap: 40px;
+}
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 380px;
+}
+.footer-logo {
+    font-size: 24px;
+}
+.footer-brand p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+.copyright {
+    margin-top: auto;
+    font-size: 13px;
+    color: #777;
+}
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer-col h4 {
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+.footer-col a,
+.footer-col p {
+    font-size: 15px;
+    color: #555;
+    text-decoration: none;
+}
+.footer-col a:hover {
+    color: #000;
+}
+.footer-email {
+    color: #000 !important;
+}
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.socials a {
+    padding: 4px 10px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e0e0de;
+}
+.available {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 12px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.available::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #2f55c4;
+    border-radius: 50%;
+}
+.legal {
+    display: flex;
+    gap: 24px;
+}
+.legal a {
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+}
+

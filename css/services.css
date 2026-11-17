@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Intro-Service {
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;    
+    padding: 60px 50px; 
+}
+.service-label {
+    font-size: 12px;
+    letter-spacing: 0.08rem;
+    color: blue;
+}
+
+/* What we do */
+.services-work {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 40px 30px 24px;
+}
+
+.services-label {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    color: #444;
+}
+
+.work-text {
+    font-size: 36px;
+}
+
+/* three cards in a row */
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin: 0 30px 40px;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px;
+    background: #f4f4f2;
+    border-radius: 8px;
+}
+
+.service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 6px;
+}
+
+.service-card h2 {
+    font-size: 24px;
+}
+
+.service-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* ticks */
+.tick {
+    list-style: none;          /* removes the bullets */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.tick li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tick li i {
+    color: #2f55c4;            /* no font-family here, so the tick keeps its icon font */
+    font-size: 13px;
+}
+
+.tick li span {
+    font-size: 15px;
+}
+
+/* Service-Price */
+.transparent {
+    margin: 80px auto;
+    gap: 20px;
+    max-width: 550px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    grid-column: 1 / -1;   
+}
+.price-text {
+    color: #2f55c4;
+}
+.card h1 {
+    margin: 16px 0;
+    font-size: 50px;
+}
+.card #small-span {
+    font-size: 20px;
+}
+.card ul {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 20px 0;
+}
+#card-price-2 {
+    background-color: #000;
+    color: white;
+}
+.tick-service li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.tick-service li i {
+    color: #2f55c4;  
+}
+.card button {
+    width: 100%;
+    padding: 12px;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.card button:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* Questions */
+.faq {
+    gap: 20px;
+    max-width: 550px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    grid-column: 1 / -1;     
+}
+
+/* Question Dropdown */
+.faq-list {
+    max-width: 800px;     
+    margin: 0 auto 80px;
+    grid-column: 1 / -1; 
+    
+}
+
+.faq-list details {
+    background: #efefed;
+    width: 550px;
+    padding: 20px;
+    margin-bottom: 8px;
+    border-radius: 6px;    
+    
+}
+
+.faq-list summary {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Ready To Start */
+#card-start {
+    grid-column: 1 / -1;  
+    flex-direction: column;
+    margin: 10px auto;
+    gap: 25px;   
+    max-width: 800px;
+    align-items: center;
+    display: flex;
+}
+#project-button {
+    width: 200px;
+    background-color: #000;
+    color: white;
+} 
+
+/* === FOOTER === */
+.card-footer {
+    grid-column: 1 / -1;  
+    margin-top: 60px;
+    padding: 60px 50px 70px;
+    background: #f4f4f2;
+    border-top: 1px solid #e5e5e5;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.08);
+}
+.footer-top {
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr 1.2fr;
+    gap: 40px;
+}
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 380px;
+}
+.footer-logo {
+    font-size: 24px;
+}
+.footer-brand p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+.copyright {
+    margin-top: auto;
+    font-size: 13px;
+    color: #777;
+}
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.footer-col h4 {
+    font-size: 14px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+.footer-col a,
+.footer-col p {
+    font-size: 15px;
+    color: #555;
+    text-decoration: none;
+}
+.footer-col a:hover {
+    color: #000;
+}
+.footer-email {
+    color: #000 !important;
+}
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.socials a {
+    padding: 4px 10px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #333;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid #e0e0de;
+}
+.available {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 12px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.available::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #2f55c4;
+    border-radius: 50%;
+}
+.legal {
+    display: flex;
+    gap: 24px;
+}
+.legal a {
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    /* Intro */
+    .Intro-Service {
+        padding: 30px 20px;
+        margin: 15px;
+    }
+
+    /* Service cards: 3 columns -> 1 column */
+    .service-list {
+        grid-template-columns: 1fr;
+        margin: 0 20px 30px;
+    }
+    .service-card {
+        padding: 25px;
+    }
+    .work-text {
+        font-size: 26px;
+    }
+
+    /* Pricing */
+    .card h1 {
+        font-size: 36px;
+    }
+
+    /* FAQ dropdowns: fixed width -> fit the screen */
+    .faq-list details {
+        width: 100%;
+    }
+    .faq-list {
+        padding: 0 20px;
+    }
+}
